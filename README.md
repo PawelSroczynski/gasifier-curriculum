@@ -26,6 +26,20 @@ THRONE-GEMINI is an autonomous Waste-to-Energy system that performs two-stage th
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+## Design Inspiration
+
+THRONE-GEMINI builds upon the **PyroFarm** dual-container pyrolysis system developed by Kaskad-E (Switzerland). The PyroFarm 50kW uses a swing-arm mechanism to alternate between two reactor vessels, enabling continuous heat production while one vessel cools/reloads.
+
+![PyroFarm 50kW Inspiration](sources/pyrofarm_50kw_inspiration.png)
+
+**Key differences from PyroFarm:**
+| Feature | PyroFarm 50 | THRONE-GEMINI |
+|---------|-------------|---------------|
+| Phases | 1 (Pyrolysis) | 2 (Pyrolysis + Gasification) |
+| Output | Heat + Biochar | Heat + Syngas + Biochar |
+| Topology | Swing arm (2 pos) | Turntable "Revolver" (N pos) |
+| End use | Water heating | Heating + Electricity |
+
 ## Architecture
 
 - **Topology:** Stationary docking head + mobile reactor vessels on turntable ("Revolver")
@@ -55,6 +69,8 @@ THRONE-GEMINI is an autonomous Waste-to-Energy system that performs two-stage th
 | File | Description |
 |------|-------------|
 | `THRONE_GEMINI_SPEC_v2.md` | Complete engineering specification |
+| `sources/SOURCES.md` | Research sources and reference materials |
+| `sources/*.pdf` | PyroFarm technical documentation (Pyronet GmbH) |
 
 ### Specification Contents
 
